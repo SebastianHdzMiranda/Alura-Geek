@@ -1,0 +1,32 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.footer{
+    background-color: lighten(v.$primario, 43%);
+    padding-block: 6rem;
+    .footer__contenido{
+        display: grid;
+        
+        @include m.tablet{
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: .3fr 1fr;
+        }
+        @include m.desktop{
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: none;
+        }
+    }
+    .footer__logo{
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+        @include m.tablet{
+            margin-bottom: 2rem;
+        }
+    }
+    .footer__img{
+        margin: 0 auto;
+        @include m.tablet{
+            margin: unset;
+        }
+    }
+}

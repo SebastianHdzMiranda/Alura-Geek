@@ -1,0 +1,56 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.hero{
+    background-image: url(../img/Hero-mov.png);
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include m.tablet{
+        padding-bottom: 46%;
+    }
+    @include m.desktop{
+        padding-bottom: 25%;
+        background-image: url(../img/Hero.png);
+    }
+    .hero__content{
+        color: v.$blanco;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 4.5rem;
+    }
+    .hero__titulo{
+        font-size: 8vw;
+        margin-bottom: 2rem;
+        color: v.$blanco;
+        @include m.tablet{
+            font-size: 5.2rem;
+        }
+    }
+    .hero__texto{
+        color: v.$blanco;
+        margin: 0 0 3rem 0;
+        font-size: 4vw;
+        @include m.tablet{
+            font-size: 2rem
+        }
+
+    }
+    .hero__enlace{
+        @include m.boton(v.$blanco, v.$primario);
+        font-size: 4vw;
+        padding: 2.5vw 4vw;
+        @include m.tablet{
+            padding: 1.2rem 1.6rem;
+            font-size: 1.6rem;
+
+        }
+    }
+
+
+
+}
