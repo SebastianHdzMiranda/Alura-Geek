@@ -17,13 +17,13 @@
         padding-bottom: 25%;
         background-image: url(../img/Hero.png);
     }
-    .hero__content{
+    &__content{
         color: v.$blanco;
         position: absolute;
         bottom: 0;
         padding-bottom: 4.5rem;
     }
-    .hero__titulo{
+    &__titulo{
         font-size: 8vw;
         margin-bottom: 2rem;
         color: v.$blanco;
@@ -31,7 +31,7 @@
             font-size: 5.2rem;
         }
     }
-    .hero__texto{
+    &__texto{
         color: v.$blanco;
         margin: 0 0 3rem 0;
         font-size: 4vw;
@@ -40,7 +40,7 @@
         }
 
     }
-    .hero__enlace{
+    &__enlace{
         @include m.boton(v.$blanco, v.$primario);
         font-size: 4vw;
         padding: 2.5vw 4vw;

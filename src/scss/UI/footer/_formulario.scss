@@ -10,11 +10,11 @@
         grid-column: unset;
         grid-row: unset;
     }
-    .formulario__titulo{
+    &__titulo{
         font-size: 2rem;
         margin-bottom: 1rem;
     }
-    .formulario__campo{
+    &__campo{
         background-color: v.$blanco;
         padding: .8rem 1.2rem;
         margin-bottom: 3rem;
@@ -25,11 +25,11 @@
             transform: translateY(-1px);
         }
     }
-    .formulario__label{
+    &__label{
         color: v.$negro;
         font-size: 1.2rem;
     }
-    .formulario__input{
+    &__input{
         background-color: transparent;
         width: 100%;
         border: none;
@@ -38,7 +38,7 @@
             outline: none;
         }
     }
-    .formulario__textArea{
+    &__textArea{
         border-radius: 5px;
         width: 100%;
         border: none;
@@ -56,7 +56,7 @@
             transform: translateY(-1px);
         }
     }   
-    .formulario__submit{
+    &__submit{
         @include m.boton(v.$blanco, v.$primario);
         padding: 1.5rem 2rem;
         width: 100%;

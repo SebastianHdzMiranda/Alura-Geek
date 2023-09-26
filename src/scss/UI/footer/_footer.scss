@@ -4,7 +4,7 @@
 .footer{
     background-color: lighten(v.$primario, 43%);
     padding-block: 6rem;
-    .footer__contenido{
+    &__contenido{
         display: grid;
         
         @include m.tablet{
@@ -16,14 +16,14 @@
             grid-template-rows: none;
         }
     }
-    .footer__logo{
+    &__logo{
         margin-top: -1rem;
         margin-bottom: 2rem;
         @include m.tablet{
             margin-bottom: 2rem;
         }
     }
-    .footer__img{
+    &__img{
         margin: 0 auto;
         @include m.tablet{
             margin: unset;
